@@ -1,3 +1,9 @@
+h4.job-title {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
 h3.panel-title {
   text-align: center;
 }
