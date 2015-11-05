@@ -15,3 +15,49 @@ img.profile-photo {
   margin-right: auto;
   margin-left: auto;
 }
+
+img.circled{
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.social-icon{
+  margin-top:15px;
+}
+
+.social-icon:nth-of-type(odd) {
+  text-align: right;
+}
+
+.social-icon:nth-of-type(even) {
+  text-align: left;
+}
+
+.social-icon a{
+  display: inline-block;
+  text-decoration: none;
+  opacity: .6;
+}
+
+.social-icon a:hover{
+  opacity: 1;
+}
+
+.facebook:before{
+    content: "";
+    display: block;
+    background: url("../img/icons/facebook.png") no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.linkedin:before{
+  content: "";
+    display: block;
+    background: url("../img/icons/linkedin.png") no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
