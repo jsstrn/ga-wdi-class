@@ -8,18 +8,20 @@ h3.panel-title {
   text-align: center;
 }
 
-/*img.profile-photo {
+img.profile-photo {
   width: 100%;
   max-width: 256px;
   display: block;
   margin-right: auto;
   margin-left: auto;
-}*/
-.panel-body {
+}
+/* Attempt to auto crop pictures -- buggy */
+/*.panel-body {
   position: relative;
   width: 256px;
   height: 256px;
   margin: auto;
+  pading: 15px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -31,7 +33,7 @@ h3.panel-title {
   max-height: 256px;
   width: auto;
   transform: translate(-50%,-50%);
-}
+}*/
 
 img.circled{
   border-radius: 50%;
