@@ -1,3 +1,6 @@
+.panel-body {
+  text-align: center;
+}
 h4.job-title {
   margin-top: 1em;
   text-align: center;
@@ -8,32 +11,11 @@ h3.panel-title {
   text-align: center;
 }
 
-img.profile-photo {
-  width: 100%;
-  max-width: 256px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-/* Attempt to auto crop pictures -- buggy */
-/*.panel-body {
-  position: relative;
-  width: 256px;
-  height: 256px;
-  margin: auto;
-  pading: 15px;
-  overflow: hidden;
-  border-radius: 5px;
-}
 .profile-photo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  max-height: 256px;
-  width: auto;
-  transform: translate(-50%,-50%);
-}*/
+  height: 256px;
+  width: 256px;
+  object-fit: cover;
+}
 
 img.circled{
   border-radius: 50%;
@@ -43,6 +25,7 @@ img.circled{
 
 .social-icon{
   margin-top:15px;
+  height: 25px;
 }
 
 .social-icon:nth-of-type(odd) {
