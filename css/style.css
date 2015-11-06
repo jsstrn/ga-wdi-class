@@ -63,3 +63,9 @@ img.circled{
     width: 25px;
     height: 25px;
 }
+
+#yongjun {
+  margin: 0 auto;
+  background-image: url("../img/yongjun.jpg");
+  background-position:55% 5%;
+}
