@@ -1,3 +1,6 @@
+.panel-body {
+  text-align: center;
+}
 h4.job-title {
   margin-top: 1em;
   text-align: center;
@@ -8,12 +11,10 @@ h3.panel-title {
   text-align: center;
 }
 
-img.profile-photo {
-  width: 100%;
-  max-width: 256px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.profile-photo {
+  height: 256px;
+  width: 256px;
+  object-fit: cover;
 }
 
 img.circled{
@@ -24,6 +25,7 @@ img.circled{
 
 .social-icon{
   margin-top:15px;
+  height: 25px;
 }
 
 .social-icon:nth-of-type(odd) {
@@ -60,4 +62,10 @@ img.circled{
     background-size: cover;
     width: 25px;
     height: 25px;
+}
+
+#yongjun {
+  margin: 0 auto;
+  background-image: url("../img/yongjun.jpg");
+  background-position:55% 5%;
 }
