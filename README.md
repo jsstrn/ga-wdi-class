@@ -1,6 +1,6 @@
 # GA WDI Class Names and Photos
 
-A list of the students names and their profile photos
+A list of the students names and their profile photos @ http://jsstrn.github.io/ga-wdi-class/
 
 ## Instructions
 
