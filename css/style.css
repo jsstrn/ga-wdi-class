@@ -47,21 +47,21 @@ img.circled{
 }
 
 .facebook:before{
-    content: "";
-    display: block;
-    background: url("../img/icons/facebook.png") no-repeat;
-    background-size: cover;
-    width: 25px;
-    height: 25px;
+  content: "";
+  display: block;
+  background: url("../img/icons/facebook.png") no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
 }
 
 .linkedin:before{
   content: "";
-    display: block;
-    background: url("../img/icons/linkedin.png") no-repeat;
-    background-size: cover;
-    width: 25px;
-    height: 25px;
+  display: block;
+  background: url("../img/icons/linkedin.png") no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
 }
 
 #yongjun {
