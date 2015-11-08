@@ -72,11 +72,3 @@ img.circled{
   background-image: url("../img/yongjun.jpg");
   background-position:55% 5%;
 }
-.steve {
-  object-fit: none;
-  object-position: -164px -119px;
-}
-.irvin {
-  object-fit: none;
-  object-position: 44px 7px;
-}
