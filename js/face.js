@@ -2,11 +2,11 @@
 var photos = Array.from(document.querySelectorAll('.profile-photo'))
 
 photos.forEach(function (photo) {
-  var face = detectFace(photo.src)
-  if (face) {
+  var res = detectFace(photo.src)
+  if (res) {
     // center of face
-    var faceX = face[0].x + face[0].width / 2
-    var faceY = face[0].y + face[0].height / 2
+    var faceX = res.faces[0].x + res.faces[0].width / 2
+    var faceY = res.faces[0].y + res.faces[0].height / 2
     // reposition face
     var posX = 256 / 2 - faceX
     var posY = 256 / 2 - faceY
