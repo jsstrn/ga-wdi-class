@@ -3,7 +3,7 @@ var photos = Array.from(document.querySelectorAll('.profile-photo'))
 var faces = []
 
 photos.forEach(function (photo, index) {
-  faces[index] = detectFace(photo.src)
+  detectFace(photo.src, index)
 })
 // photos.forEach(function (photo) {
 //   var face = detectFace(photo.src)
@@ -26,6 +26,7 @@ function detectFace (photoURL) {
   //   if (xhr.readyState === 4) {
   //     if (xhr.status === 200) {
   //       console.log(xhr.responseText)
+  //       faces[index] = responseText
   //     } else {
   //       console.error(xhr.statusText)
   //     }
@@ -48,3 +49,8 @@ function detectFace (photoURL) {
 function repositionPhoto (photo, faceX, faceY) {
   // body...
 }
+
+
+// sample data - steve
+// center x 58.308605
+// center y 29.25
