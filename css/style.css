@@ -1,5 +1,9 @@
 .panel-body {
   text-align: center;
+  /*position: relative;*/
+  /*height: 256px;
+  width: 358px;
+  padding: 15px;*/
 }
 h4.job-title {
   margin-top: 1em;
@@ -67,3 +71,12 @@ img.circled{
   margin: 0 auto;
   background-image: url("../img/yongjun.jpg");
   background-position:55% 5%;
+}
+.steve {
+  object-fit: none;
+  object-position: -164px -119px;
+}
+.irvin {
+  object-fit: none;
+  object-position: 44px 7px;
+}
