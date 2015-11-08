@@ -1,8 +1,9 @@
-# GA WDI Class Names and Photos
 
+# GA WDI Class Names and Photos
 A list of the students names and their profile photos
 
 ## Instructions
+
 
 1. Fork this repo
 2. Add your profile photo (at least 256px) to the img directory
