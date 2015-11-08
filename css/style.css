@@ -6,7 +6,6 @@ h4.job-title {
   text-align: center;
   font-weight: bold;
 }
-
 h3.panel-title {
   text-align: center;
 }
@@ -68,4 +67,3 @@ img.circled{
   margin: 0 auto;
   background-image: url("../img/yongjun.jpg");
   background-position:55% 5%;
-}

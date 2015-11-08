@@ -1,5 +1,4 @@
 # GA WDI Class Names and Photos
-
 A list of the students names and their profile photos
 
 ## Instructions
