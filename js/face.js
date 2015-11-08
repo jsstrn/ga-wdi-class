@@ -2,6 +2,7 @@
 var photos = Array.from(document.querySelectorAll('.profile-photo'))
 
 photos.forEach(function (photo) {
+  console.log(photo.src)
   var res = detectFace(photo.src)
   if (res) {
     // center of face
