@@ -1,7 +1,9 @@
 // script to position images such that the faces are at the centre of the photo
 var photos = Array.from(document.querySelectorAll('.profile-photo'))
-var faces = photos.map(function (photo) {
-  detectFace(photo.src)
+var faces = []
+
+photos.forEach(function (photo, index) {
+  faces[index] = detectFace(photo.src)
 })
 // photos.forEach(function (photo) {
 //   var face = detectFace(photo.src)
