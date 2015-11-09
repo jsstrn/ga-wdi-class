@@ -1,19 +1,29 @@
 // script to position images such that the faces are at the centre of the photo
 var photos = Array.from(document.querySelectorAll('.profile-photo'))
+var faces = []
 
-photos.forEach(function (photo) {
+photos.forEach(function (photo, index) {
   console.log(photo.src)
-  var res = detectFace(photo.src)
-  if (res) {
-    // center of face
-    var faceX = res.faces[0].x + res.faces[0].width / 2
-    var faceY = res.faces[0].y + res.faces[0].height / 2
+  if (photo.src) {
+    faces[index] = detectFace(photo.src)
+  }
+})
+
+// reposition faces
+faces.forEach(function (face, index) {
+  if (face.faces[0]) {
+    // calculate the center of face
+    console.log(face.faces[0].x);
+    var faceX = face.faces[0].x + face.faces[0].width / 2
+    var faceY = face.faces[0].y + face.faces[0].height / 2
     // reposition face
     var posX = 256 / 2 - faceX
     var posY = 256 / 2 - faceY
-    // apply css style to photos[index]
-    photo.style.objectFit = 'none'
-    photo.style.objectPosition = posX + 'px ' + posY + 'px'
+    // apply css style to corresponding img
+    photos[index].style.objectFit = 'none'
+    photos[index].style.objectPosition = posX + 'px ' + posY + 'px'
+
+    // NEED TO SCALE THE IMAGE
   }
 })
 
@@ -45,47 +55,3 @@ function detectFace (photoURL) {
   xhr.send()
   return JSON.parse(xhr.response)
 }
-
-// sample data - steve
-// {
-//   "faces": [
-//     {
-//       "orientation": "frontal",
-//       "x": 199,
-//       "y": 154,
-//       "width": 186,
-//       "height": 186
-//     }
-//   ],
-//   "image": {
-//     "width": 500,
-//     "height": 889
-//   }
-// }
-// center of face
-// centerx = x + width/2
-// centery = y + width/2
-  // centerx = 199 + 186/2 = 292
-  // centery = 154 + 186/2 = 247
-// posX = 256/2 - centerx
-// posY = 256/2 - centery
-  // posX = 256/2 - 292 = -164
-  // posY = 256/2 - 247 = -119
-// Irvin
-// {
-//   "faces": [
-//     {
-//       "orientation": "frontal",
-//       "x": 22,
-//       "y": 59,
-//       "width": 124,
-//       "height": 124
-//     }
-//   ],
-//   "image": {
-//     "width": 272,
-//     "height": 234
-//   }
-// }
-// posX = 256/2 - (22 + 124/2) = 44
-// posY = 256/2 - (59 + 124/2) = 7
