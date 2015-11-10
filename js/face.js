@@ -12,33 +12,29 @@ photos.forEach(function (photo, index) {
 // it should take the URL of the photo, send to the API
 // receive the x, y coordinate of the photo
 function detectFace (photoURL, index) {
-  var xhr = new XMLHttpRequest()
+  var apiURL = 'https://apicloud-facerect.p.mashape.com/process-url.json?url=' + encodeURIComponent(photoURL)
 
-  var xhrURL = 'https://apicloud-facerect.p.mashape.com/process-url.json?url=' + encodeURIComponent(photoURL)
-  xhr.open('GET', xhrURL, true)
-  xhr.setRequestHeader('X-Mashape-Key', apiKey)
-  xhr.setRequestHeader('Accept', 'application/json')
-
-  xhr.onload = function (e) {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        var res = JSON.parse(xhr.response)
-        var face = res.faces[0]
-        var image = res.image
-        // reposition only if a face was detected and image is not in square format.
-        if (face && image.height !== image.width) {
-          repositionFace(face, image, index)
-        }
-      } else {
-        console.error(xhr.statusText)
-      }
+  // call API using fetch()
+  var headers = new Headers()
+  headers.append('X-Mashape-Key', apiKey)
+  headers.append('Accept', 'application/json')
+  var init = {
+    method: 'GET',
+    headers: headers
+  }
+  var request = new Request(apiURL)
+  fetch(request, init).then(function (response) {
+    return response.json()
+  }).then(function (data) {
+    var face = data.faces[0]
+    var image = data.image
+    // reposition only if a face was detected and image is not in square format.
+    if (face && image.height !== image.width) {
+      repositionFace(face, image, index)
     }
-  }
-  xhr.onerror = function (e) {
-    console.error(xhr.statusText)
-  }
-
-  xhr.send()
+  }).catch(error => {
+    console.error(error)
+  })
 }
 
 // reposition face
