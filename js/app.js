@@ -18,7 +18,7 @@ function insertPanel (name, imagePath) {
   img.className = 'profile-photo img-rounded'
   // insert data
   h3.textContent = name
-  img.src = '../' + imagePath
+  img.src = imagePath
   // append elements
   divPanelHead.appendChild(h3)
   divPanelBody.appendChild(img)
