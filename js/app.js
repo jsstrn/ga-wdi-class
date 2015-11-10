@@ -36,7 +36,6 @@ fetch('js/data.json')
     data.instructors.forEach(instructor => {
       console.log(instructor.name)
       insertInstructors.appendChild(insertPanel(instructor.name, instructor.imagePath))
-
     })
     data.students.forEach(student => {
       console.log(student.name)
