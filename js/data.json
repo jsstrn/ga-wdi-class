@@ -1,0 +1,150 @@
+{
+  "instructors": [
+    {
+      "name": "Sebastiaan Deckers",
+      "title": "Instructor",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/cbas"
+    },
+    {
+      "name": "Cheryl Wong",
+      "title": "Teaching Assistant",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    }
+  ],
+  "students": [
+    {
+      "name": "Albert Salim",
+      "title": "Student",
+      "imagePath": "img/albert.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Jesstern Rays",
+      "title": "Student",
+      "imagePath": "img/jsstrn.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    }
+  ]
+}
