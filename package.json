@@ -1,0 +1,22 @@
+{
+  "name": "ga-wdi-class",
+  "version": "1.0.0",
+  "description": "GA WDI Class Profile Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caalberts/ga-wdi-class.git"
+  },
+  "author": "Albert Salim, Jesstern Rays",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caalberts/ga-wdi-class/issues"
+  },
+  "homepage": "https://github.com/caalberts/ga-wdi-class#readme",
+  "devDependencies": {
+    "surge": "^0.17.2"
+  }
+}
