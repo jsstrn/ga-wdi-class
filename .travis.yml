@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - "5.0"
 after_success:
-  - surge --project ./ --ga-wdi-class.surge.sh
+  - surge --project ./ --domain ga-wdi-class.surge.sh
