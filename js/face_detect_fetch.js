@@ -85,7 +85,10 @@ function detectFace (object) {
     }
   }
   var formData = new FormData()
-  formData.append('image', fs.createReadStream(object.imagePath))
+
+  if (object.imagePath.slice(0, 4) === 'http') return object // ignore images from other websites as they will cause unhandled createReadStream error
+  var imageStream = fs.createReadStream(object.imagePath)
+  formData.append('image', imageStream)
   init.body = formData
 
   return fetch(apiURL, init).then(function (response) {
