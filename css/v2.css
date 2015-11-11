@@ -8,12 +8,14 @@ h3.panel-title {
   text-align: center;
 }
 
-img.profile-photo {
-  width: 100%;
-  max-width: 256px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.panel-body {
+  text-align: center;
+}
+
+.profile-photo {
+  height: 256px;
+  width: 256px;
+  object-fit: cover;
 }
 
 p.footer {
