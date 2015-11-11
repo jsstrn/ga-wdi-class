@@ -3,13 +3,13 @@
     {
       "name": "Sebastiaan Deckers",
       "title": "Instructor",
-      "imagePath": "img/man.png",
+      "imagePath": "img/cbas.jpg",
       "githubURL": "https://github.com/cbas"
     },
     {
       "name": "Cheryl Wong",
       "title": "Teaching Assistant",
-      "imagePath": "img/man.png",
+      "imagePath": "cheryl.jpg",
       "githubURL": "https://github.com/yourGitHubUsername"
     }
   ],
@@ -101,7 +101,7 @@
     {
       "name": "Jeremy Tan",
       "title": "Student",
-      "imagePath": "wytanj.jpg",
+      "imagePath": "img/wytanj.jpg",
       "githubURL": "https://github.com/yourGitHubUsername"
     },
     {
