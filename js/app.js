@@ -49,14 +49,23 @@ function insertPanel (name, imagePath, faceData) {
   return divCol
 }
 
-fetch('js/dataWithFace.json')
+fetch('js/data.json')
   .then(response => response.json())
   .then(data => {
     data.instructors.forEach(instructor => {
       console.log(instructor.name)
       insertInstructors.appendChild(insertPanel(instructor.name, instructor.imagePath, instructor.faceData))
     })
-    var sortedStudents = _.sortBy(data.students, 'name')
+  })
+  .catch(error => {
+    // something went wrong, tell the user maybe?
+    console.error(error)
+  })
+
+fetch('js/dataWithFace.json')
+  .then(response => response.json())
+  .then(data => {
+    var sortedStudents = _.sortBy(data, 'name')
     sortedStudents.forEach(student => {
       insertStudents.appendChild(insertPanel(student.name, student.imagePath, student.faceData))
     })
