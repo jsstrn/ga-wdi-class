@@ -1,0 +1,22 @@
+h4.job-title {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3.panel-title {
+  text-align: center;
+}
+
+img.profile-photo {
+  width: 100%;
+  max-width: 256px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.footer {
+  text-align: center;
+  font-size: 0.8em
+}
