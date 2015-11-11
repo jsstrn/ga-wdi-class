@@ -1,5 +1,3 @@
-var fs = require('fs')
-var apiKey = require('./config')
 // script to position images such that the faces are at the centre of the photo
 var photos = Array.from(document.querySelectorAll('.profile-photo'))
 
