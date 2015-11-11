@@ -22,23 +22,26 @@ function insertPanel (name, imagePath, faceData) {
   // insert data
   h3.textContent = name
   img.src = imagePath
-  // reposition image
-  var face = faceData.faces[0]
-  var imgHeight = faceData.image.height
-  var imgWidth = faceData.image.width
-  // reposition only if a face was detected and image is not in square format.
-  if (face && imgHeight !== imgWidth) {
-    var adjust
-    if (imgHeight > imgWidth) {
-      // vertical adjust
-      adjust = calculateAdjustment(imgHeight, imgWidth, face.y, face.height)
-      img.style.objectPosition = '0 ' + adjust + 'px'
-    } else {
-      // horizontal adjust
-      adjust = calculateAdjustment(imgWidth, imgHeight, face.x, face.width)
-      img.style.objectPosition = adjust + 'px' + ' 0'
+  // reposition image if there is faceData
+  if (faceData) {
+    var face = faceData.faces[0]
+    var imgHeight = faceData.image.height
+    var imgWidth = faceData.image.width
+    // reposition only if a face was detected in the image and image is not in square format.
+    if (face && imgHeight !== imgWidth) {
+      var adjust
+      if (imgHeight > imgWidth) {
+        // vertical adjust
+        adjust = calculateAdjustment(imgHeight, imgWidth, face.y, face.height)
+        img.style.objectPosition = '0 ' + adjust + 'px'
+      } else {
+        // horizontal adjust
+        adjust = calculateAdjustment(imgWidth, imgHeight, face.x, face.width)
+        img.style.objectPosition = adjust + 'px' + ' 0'
+      }
     }
   }
+
   // append elements
   divPanelHead.appendChild(h3)
   divPanelBody.appendChild(img)
