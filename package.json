@@ -1,0 +1,29 @@
+{
+  "name": "ga-wdi-class",
+  "version": "1.0.0",
+  "description": "GA WDI Class Profile Page",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./js/face_detect_fetch.js",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caalberts/ga-wdi-class.git"
+  },
+  "author": "@jsstrn, @caalberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caalberts/ga-wdi-class/issues"
+  },
+  "homepage": "https://github.com/caalberts/ga-wdi-class#readme",
+  "devDependencies": {
+    "surge": "^0.17.2"
+  },
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "form-data": "^0.2.0",
+    "isomorphic-fetch": "^2.2.0",
+    "unirest": "^0.4.2"
+  }
+}
