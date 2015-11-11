@@ -1,7 +1,7 @@
 // This script reads data.json file then detects faces in each person's image and store the facial data into data.json
 
 
-var apiKey = $MASHAPE_TOKEN
+var apiKey = process.env.MASHAPE_TOKEN
 
 // fetch data from data.json
 fetch('js/data.json')
