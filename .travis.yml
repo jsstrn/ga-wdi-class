@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "5.0"
-build:
+script:
   - node ./js/face_detect_fetch.js
 after_success:
   - surge --project ./ --domain ga-wdi-class.surge.sh
