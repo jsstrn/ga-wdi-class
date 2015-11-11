@@ -1,3 +1,6 @@
+// var source = $('#instructor-template').html()
+// var template = Handlebars.compile(source)
+
 var insertInstructors = document.querySelector('div #instructors')
 var insertStudents = document.querySelector('div #students')
 
@@ -31,14 +34,12 @@ function insertPanel (name, imagePath) {
 fetch('js/data.json')
   .then(response => response.json())
   .then(data => {
-    // do your stuff here with `data`
-    console.log(data)
     data.instructors.forEach(instructor => {
       console.log(instructor.name)
       insertInstructors.appendChild(insertPanel(instructor.name, instructor.imagePath))
     })
-    data.students.forEach(student => {
-      console.log(student.name)
+    var sortedStudents = _.sortBy(data.students, 'name')
+    sortedStudents.forEach(student => {
       insertStudents.appendChild(insertPanel(student.name, student.imagePath))
     })
   })
