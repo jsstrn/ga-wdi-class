@@ -26,6 +26,55 @@ img.circled{
   -webkit-border-radius: 50%;
 }
 
+/* refactored social row code to flex-box */
+
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon{
+  margin-top:15px;
+  height: 30px;
+	padding: 0px 5px;
+}
+
+.social-icon a{
+  display: inline-flex;
+  text-decoration: none;
+  opacity: .6;
+}
+
+.social-icon a:hover{
+  opacity: 1;
+}
+
+.facebook,
+.linkedin,
+.github{
+  content: "";
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+}
+
+.facebook{
+  background: url("../img/icons/facebook.png") no-repeat;
+  background-size: cover;
+}
+
+.linkedin{
+  background: url("../img/icons/linkedin.png") no-repeat;
+  background-size: cover;
+}
+
+.github{
+  background: url("../img/icons/github.png") no-repeat;
+  background-size: cover;
+}
+
+/* old social row code below
+
 .social-icon{
   margin-top:15px;
   height: 25px;
@@ -66,6 +115,8 @@ img.circled{
   width: 25px;
   height: 25px;
 }
+
+end of old social row code */
 
 #yongjun {
   margin: 0 auto;
